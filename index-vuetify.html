@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+  <style media="screen">
+    /* This is for documentation purposes and will not be needed in your application */
+#lateral .v-btn--example {
+  bottom: 0;
+  position: absolute;
+  margin: 0 0 16px 16px;
+}
+  </style>
+</head>
+<body>
+  <div id="app">
+  <v-app id="inspire">
+    <v-footer
+  color="primary lighten-1"
+  padless
+>
+  <v-row
+    justify="center"
+    no-gutters
+  >
+    <v-btn
+      v-for="link in links"
+      :key="link"
+      color="white"
+      text
+      rounded
+      class="my-2"
+    >
+      {{ link }}
+    </v-btn>
+    <v-col
+      class="primary lighten-2 py-4 text-center white--text"
+      cols="12"
+    >
+      {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+    </v-col>
+  </v-row>
+</v-footer>
+  </v-app>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+    el: '#app',
+    vuetify: new Vuetify(),
+    data: () => ({
+      fab: false,
+      hidden: false,
+      tabs: null,
+      links: [
+      'Home',
+      'About Us',
+      'Team',
+      'Services',
+      'Blog',
+      'Contact Us',
+    ],
+    }),
+
+    computed: {
+      activeFab () {
+        switch (this.tabs) {
+          case 'one': return { color: 'success', icon: 'share' }
+          case 'two': return { color: 'red', icon: 'edit' }
+          case 'three': return { color: 'green', icon: 'keyboard_arrow_up' }
+          default: return {}
+        }
+      },
+    },
+  })
+  </script>
+</body>
+</html>

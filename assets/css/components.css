@@ -1,0 +1,137 @@
+.btn-more {
+    position: fixed;
+    right: 25px;
+    bottom: 45px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    width: 56px;
+    height: 56px;
+    z-index: 999999;
+    border: none;
+    border-radius: 100px;
+    padding-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    padding-top: 0;
+    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.5s; /* Firefox < 16 */
+    -ms-animation: fadein 0.5s; /* Internet Explorer */
+    -o-animation: fadein 0.5s; /* Opera < 12.1 */
+    animation: fadein 0.5s
+}
+
+a.btn-more{
+    padding-top: 15px;
+}
+
+.btn-more:hover {
+    box-shadow: 0 0 6px rgba(0,0,0,.16), 0 6px 12px rgba(0,0,0,.32);
+}
+
+.btn-more:focus {
+    color: #fff;
+}
+
+.btn-more i {
+    transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.btn-more:hover i {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: #fff;
+}
+
+/*Tabs*/
+.nav-link[role="tab"]{
+    position: relative;
+    color: var(--title-color);    
+    margin-top: 2px;
+    background-color: rgb(var(--backline-color));
+    border: none;
+}
+
+.nav-link[role="tab"]:hover{
+    border: none;
+    background-color: var(--backline-secundary-color);
+}
+
+.nav-link.active[role="tab"]{
+    background-color: var(--backline-secundary-color);
+    color: #fff;
+    border: none;
+}
+.nav-link.active[role="tab"]::before{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0;
+    border-color: #888 transparent transparent transparent;
+    border-width: 7px;
+    border-style: solid;
+    bottom: calc(-100% + 24px);
+    left: calc(50% - 8px);
+}
+
+.nav-link.active[role="tab"]::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0;
+    border-color: #000 transparent transparent transparent;
+    border-top-color: var(--backline-secundary-color);
+    border-width: 7px;
+    border-style: solid;
+    bottom: calc(-100% + 24px);
+    left: calc(50% - 8px);
+}
+
+/*wizard form*/
+.card.wizard, .card.wizard .card-header{
+    background-color: transparent;    
+    border: none!important;
+}
+
+.card.wizard .card-body{
+    background-color: var(--white);
+}
+
+.tab-pane.animated.faster {
+    animation-duration: 0.3s!important;
+}
+
+.nav-tabs{
+    border: none;
+}
+
+/*Steps situation*/
+
+.step-completed{
+    background-color: #30b76a!important;
+    color: #fff!important;
+}
+.step-completed.nav-link.active[role="tab"]::after{
+    border-top-color: #30b76a!important;
+}
+.step-completed.nav-link[role="tab"] span.badge.badge-pill.badge-secondary{
+    background-color: rgb(var(--backline-color))!important;
+}
+
+.step-error{
+    background-color: #f95858!important;
+    color: #fff!important;
+}
+.step-error.nav-link.active[role="tab"]::after{
+    border-top-color: #f95858!important;
+}

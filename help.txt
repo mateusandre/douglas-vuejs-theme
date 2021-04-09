@@ -1,0 +1,15 @@
+Tamanho da fonte: 15px;
+
+Tema que use Bootstrap 4
+Tema que seja responsivo
+Que contenha um menu com várias funcionalidades
+Tema com efeitos interessantes
+Que seja feito com VueJs
+Componentes reutilizáveis
+Fácil incorporação no projeto
+Código entendível
+Organização de arquivos
+Componentes diferentes para Sistemas web
+Paleta de cores
+Utilize conceitos do Material Design
+Boa utilização dos espaços

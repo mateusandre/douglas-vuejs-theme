@@ -1,0 +1,45 @@
+* Menu lateral responsivo
+    - fixar
+    - Ícone ou primeira letra    
+    - Expandir no mobile - ok
+* top bar
+    - breadcrumb
+    - User actions
+    - Notifications
+* Animações e transições
+* Plugins
+    - select2
+    - Select2 ajax
+    - mascara
+    - VueJs - ok
+    - Datetime picker
+    - data-tables
+    - snotify
+    - Gráficos
+    - Jquery validate
+    - axios
+    - sweet alert
+    - Editor summernote
+    - toggle
+    - tour
+* Widgets
+* UI Elements
+    - Alerts
+    - Buttons
+    - Cards
+    - Notification
+* Pages examples
+    - CRUD: Criar, Detalhes, Listar - ok
+    - Login
+    - Dashboard
+    - Website Index
+    - Seleção de perfil
+    - Relatório (Com folha de estilo para impressão)
+* Informar a localização e a data
+* Informações do proprietário do Software
+* Implementar ferramentas de ux como rastreio de click, etc
+
+
+
+/*** Desejáveis ***/
+Gulp
